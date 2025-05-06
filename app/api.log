@@ -1,0 +1,33 @@
+2025-05-06 14:00:26,120 INFO [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.9:5000
+2025-05-06 14:00:26,121 INFO [werkzeug] [33mPress CTRL+C to quit[0m
+2025-05-06 14:21:58,655 INFO [application] [POST] Company name: tesla
+2025-05-06 14:22:08,604 INFO [chromadb.telemetry.product.posthog] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-06 14:22:08,796 INFO [application] Compiling langgraph agent..
+2025-05-06 14:22:08,801 INFO [application] Invoking the agent based on conditional logic reasoning pattern
+2025-05-06 14:22:08,806 INFO [application] Searching for persisted records tesla
+2025-05-06 14:22:12,006 INFO [application] Scrapping web for results (records have not been persisted or there was a problem in the retrieval stage)
+2025-05-06 14:22:21,406 INFO [application] Embedding and storing Documents in the vector database of company tesla
+2025-05-06 14:22:22,143 INFO [application] Post-processing board member names of company tesla
+2025-05-06 14:22:22,549 INFO [werkzeug] 127.0.0.1 - - [06/May/2025 14:22:22] "POST /logic_search?company_name=tesla HTTP/1.1" 200 -
+2025-05-06 14:57:18,901 INFO [application] [POST] Company name: meta
+2025-05-06 14:57:29,176 INFO [application] Compiling langgraph agent..
+2025-05-06 14:57:29,225 INFO [application] Invoking the agent based on conditional logic reasoning pattern
+2025-05-06 14:57:29,244 INFO [application] Searching for persisted records meta
+2025-05-06 14:57:32,760 INFO [application] Scrapping web for results (records have not been persisted or there was a problem in the retrieval stage)
+2025-05-06 14:57:44,095 INFO [application] Embedding and storing Documents in the vector database of company meta
+2025-05-06 14:57:49,998 INFO [application] Post-processing board member names of company meta
+2025-05-06 14:57:51,124 INFO [werkzeug] 127.0.0.1 - - [06/May/2025 14:57:51] "POST /logic_search?company_name=meta HTTP/1.1" 200 -
+2025-05-06 15:45:31,087 INFO [application] [POST] Company name: meta
+2025-05-06 15:45:39,403 INFO [application] Compiling langgraph agent..
+2025-05-06 15:45:39,429 INFO [application] Invoking the agent based on conditional logic reasoning pattern
+2025-05-06 15:45:39,443 INFO [application] Searching for persisted records meta
+2025-05-06 15:45:41,407 INFO [application] Company meta data, already persisted
+2025-05-06 15:45:41,408 INFO [application] Post-processing board member names of company meta
+2025-05-06 15:45:42,330 INFO [werkzeug] 127.0.0.1 - - [06/May/2025 15:45:42] "POST /logic_search?company_name=meta HTTP/1.1" 200 -
+2025-05-06 16:25:24,320 INFO [application] [POST] Company name: nvidia
+2025-05-06 16:25:25,375 INFO [werkzeug] 127.0.0.1 - - [06/May/2025 16:25:25] "[35m[1mPOST /logic_search?company_name=nvidia HTTP/1.1[0m" 500 -
+2025-05-06 16:26:23,206 INFO [application] [POST] Company name: meta
+2025-05-06 16:26:23,890 INFO [werkzeug] 127.0.0.1 - - [06/May/2025 16:26:23] "[35m[1mPOST /logic_search?company_name=meta HTTP/1.1[0m" 500 -

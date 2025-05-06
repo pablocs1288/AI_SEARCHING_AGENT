@@ -1,0 +1,26 @@
+version: "3.4"
+services:
+  web-app:
+    platform: linux/arm64
+    image: web_app
+    container_name: web_app_1
+    build: web_app
+    command: flask run --host 0.0.0.0 --port 5000
+    ports:
+      - 5004:5000
+    links:
+      - mongodb
+    volumes:
+      - ./web_app:/web_app
+    stdin_open: true
+    tty: true
+    environment:
+      FLASK_ENV: local
+      FLASK_DEBUG: 0
+      ENV_FOR_DYNACONF: local
+      CHROMA_DB_DIR: ./chroma_db
+      LOCAL_NER_MODEL: en_core_web_sm
+      LOCAL_EMBEDDING_MODEL: NovaSearch/stella_en_1.5B_v5
+      LOCAL_LLM_AGENT: microsoft/Phi-3.5-mini-instruct
+      SIMILARITY_THRESHOLD: 200
+      #HUGGING_FACE_TOKEN:  # needs a secret
