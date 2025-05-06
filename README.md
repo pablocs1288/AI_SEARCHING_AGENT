@@ -2,6 +2,9 @@
 
 This project aims to create an AI agent to collect information about company and institutions online.
 
+All the langgraph and python code is within ```/app/src```. Enjoy!
+
+
 ### Starting the app - Using containers
 
 

@@ -1,2 +1,4 @@
 *.csv
 /app/chroma_db/*
+*.DS_STORE
+__pycache__
